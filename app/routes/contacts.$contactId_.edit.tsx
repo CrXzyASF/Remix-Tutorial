@@ -69,6 +69,16 @@ export default function EditContact() {
         />
       </label>
       <label>
+        <span></span>
+        <input
+          aria-label="Avatar SRC"
+          defaultValue={contact.avatar}
+          name="avatar"
+          type="file"
+          accept="image/*" // Allowing only image files
+        />
+      </label>
+      <label>
         <span>Notes</span>
         <textarea defaultValue={contact.notes} name="notes" rows={6} />
       </label>
